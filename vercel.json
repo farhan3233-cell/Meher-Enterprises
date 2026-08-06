@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "meher-enterprises-website",
+  "cleanUrls": true,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
