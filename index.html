@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meher Enterprises — Licensed Indian Manpower Recruitment for Saudi Arabia (Mumbai)</title>
+    <meta name="description" content="Meher Enterprises (Mumbai, India) — Government-licensed recruitment agency connecting Saudi Arabian enterprises with skilled Indian manpower: Drivers, Barbers, Electricians, Tailors, and Technicians.">
+    <!-- Google Fonts for English, Arabic & Logo Calligraphy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Outfit:wght@600;700;800;900&family=Syne:wght@700;800&family=Alex+Brush&family=Cinzel:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en">
+    <!-- Background Canvas for Ambient Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <img src="logo.jpeg" alt="Meher Enterprises Official Logo" class="official-logo-img">
+                <div class="brand-text">
+                    <span class="brand-name" data-i18n="brand_name">Meher Enterprises</span>
+                    <span class="brand-tagline" data-i18n="brand_sub">Mumbai, India — Indian Manpower Company</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#hero" data-i18n="nav_overview">Overview</a>
+                <a href="#roles" data-i18n="nav_roles">Manpower Categories</a>
+                <a href="#why-meher" data-i18n="nav_why">Why Meher</a>
+                <a href="#process" data-i18n="nav_process">Recruitment Process</a>
+                <a href="#contact" data-i18n="nav_contact">Contact Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Language Toggle Switch -->
+                <button class="btn-lang-toggle" id="btn-lang-toggle" aria-label="Toggle Language">
+                    <span class="lang-icon">🌐</span>
+                    <span class="lang-text" id="lang-current">العربية</span>
+                </button>
+
+                <!-- Glass Transparent Bubble Button (Know Process) -->
+                <a href="#process" class="btn-glass-bubble" id="btn-glass-info" style="text-decoration: none;">
+                    <span class="bubble-layer"></span>
+                    <span class="bubble-layer-2"></span>
+                    <span class="btn-text" data-i18n="know_process">Know Process</span>
+                    <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Full Screen Immersive Hero Section -->
+        <section id="hero" class="hero-fullscreen-section">
+            <!-- Fullscreen Background Image Container -->
+            <div class="fullscreen-bg-wrapper" id="fullscreen-bg-wrapper">
+                <img src="WhatsApp Image 2026-08-06 at 6.28.03 PM.jpeg" alt="Meher Enterprises Hero Background" id="hero-bg-img" class="hero-fullscreen-img">
+                <div class="fullscreen-vignette"></div>
+            </div>
+
+            <!-- Center 5 Person Elements Cutout (Interactive Cursor Transition) -->
+            <div class="hero-center-element-wrapper" id="hero-center-wrapper">
+                <img src="elements/helper.png" alt="Indian Skilled Technician" class="hero-person-img active" id="hero-img-1">
+                <img src="elements/Barber.png" alt="Indian Master Barber" class="hero-person-img" id="hero-img-2">
+                <img src="elements/Driver.png" alt="Indian Licensed Driver" class="hero-person-img" id="hero-img-3">
+                <img src="elements/Electrician.png" alt="Indian Certified Electrician" class="hero-person-img" id="hero-img-4">
+                <img src="elements/Tailor.png" alt="Indian Master Tailor" class="hero-person-img" id="hero-img-5">
+            </div>
+
+            <!-- Left Free Floating Text: Main Headline & Subheading -->
+            <div class="hero-left-free-text">
+                <h1 class="hero-main-title" data-i18n="hero_title">Hire Professional Indian Drivers in Just <span class="highlight-days">15 Days</span></h1>
+                <p class="hero-sub-title" data-i18n="hero_sub">We provide trained, reliable, and experienced Indian drivers for families and businesses across Saudi Arabia.</p>
+            </div>
+
+            <!-- Right Free Floating Text: Key Selling Points & Trust Line -->
+            <div class="hero-right-free-text">
+                <ul class="key-points-list">
+                    <li><span class="kp-check">✔</span> <span data-i18n="kp_1">Fast deployment within 15 days</span></li>
+                    <li><span class="kp-check">✔</span> <span data-i18n="kp_2">2-Month Replacement Guarantee</span></li>
+                    <li><span class="kp-check">✔</span> <span data-i18n="kp_3">Trained & Experienced Drivers</span></li>
+                    <li><span class="kp-check">✔</span> <span data-i18n="kp_4">Complete Legal Processing</span></li>
+                </ul>
+                <div class="trust-line" data-i18n="trust_line">Fast Service • High Reliability • Real Replacement Guarantee</div>
+            </div>
+
+            <!-- Center Bottom CTA Glass Bubble Button over Elements -->
+            <div class="hero-center-cta">
+                <a href="https://wa.me/918055873233?text=Hello%20Meher%20Enterprises%2C%20I%20want%20to%20request%20an%20Indian%20Driver%20for%20Saudi%20Arabia" target="_blank" rel="noopener noreferrer" class="btn-glass-bubble btn-large" id="btn-hero-glass-info" style="text-decoration: none;">
+                    <span class="bubble-layer"></span>
+                    <span class="bubble-layer-2"></span>
+                    <span class="btn-text" data-i18n="cta_driver">Request a Driver Now</span>
+                    <svg class="btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+
+                <!-- Scroll Indicator -->
+                <a href="#process" class="scroll-down-indicator" aria-label="Scroll to details">
+                    <span data-i18n="scroll_text">Explore Recruitment Process</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M12 6v12"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 2: Recruitment Process (5 Cards) -->
+        <section id="process" class="section process-section">
+            <div class="container">
+                <div class="section-head text-center">
+                    <span class="section-tag" data-i18n="proc_tag">RECRUITMENT STEPS</span>
+                    <h2 data-i18n="proc_title">Simple & Fast Recruitment Process</h2>
+                </div>
+
+                <div class="process-cards-grid">
+                    <!-- Card 1 -->
+                    <div class="process-card">
+                        <div class="card-step-num">01</div>
+                        <div class="card-gold-icon">📞</div>
+                        <h3 data-i18n="p1_title">Contact & Share Your Requirements</h3>
+                        <p data-i18n="p1_desc">Tell us your needs—family driver or company driver—and we’ll suggest the best suitable candidates.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="process-card">
+                        <div class="card-step-num">02</div>
+                        <div class="card-gold-icon">👤</div>
+                        <h3 data-i18n="p2_title">Choose Your Driver</h3>
+                        <p data-i18n="p2_desc">We provide shortlisted trained drivers with profiles and experience for your selection.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="process-card">
+                        <div class="card-step-num">03</div>
+                        <div class="card-gold-icon">📄</div>
+                        <h3 data-i18n="p3_title">Contract & Documentation</h3>
+                        <p data-i18n="p3_desc">We handle all legal contracts and documentation professionally and efficiently.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="process-card">
+                        <div class="card-step-num">04</div>
+                        <div class="card-gold-icon">🌍</div>
+                        <h3 data-i18n="p4_title">Visa Processing & Approvals</h3>
+                        <p data-i18n="p4_desc">We process visas and coordinate with authorities for fast approval.</p>
+                    </div>
+
+                    <!-- Card 5 (Featured Card with Pro Badge) -->
+                    <div class="process-card process-card-featured">
+                        <div class="card-pro-badge" data-i18n="p5_badge">Fastest Recruitment Service in KSA</div>
+                        <div class="card-step-num">05</div>
+                        <div class="card-gold-icon">✈️</div>
+                        <h3 data-i18n="p5_title">Driver Arrival in <span class="gold-highlight">15 Days</span></h3>
+                        <p data-i18n="p5_desc">Your driver arrives in Saudi Arabia within <span class="gold-highlight">15 days</span>, with a <span class="gold-highlight">2-month replacement guarantee</span>.</p>
+                    </div>
+                </div>
+
+                <!-- Extra Trust Bar -->
+                <div class="extra-trust-bar text-center">
+                    <span data-i18n="proc_trust_bar">✔ Fast Service | ✔ Replacement Guarantee | ✔ 100% Trusted</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Manpower Categories Showcase (5 Roles) -->
+        <section id="roles" class="section roles-section">
+            <div class="container">
+                <div class="section-head text-center">
+                    <span class="section-tag" data-i18n="cat_tag">OUR RECRUITMENT SPECIALIZATIONS</span>
+                    <h2 data-i18n="cat_title">Skilled & Tested Indian Workforce for Saudi Arabian Employers</h2>
+                    <p data-i18n="cat_desc">Meher Enterprises operates state-of-the-art trade testing centers in Mumbai to ensure every candidate meets exact Saudi industry standards.</p>
+                </div>
+
+                <div class="roles-grid">
+                    <!-- Role 1 -->
+                    <div class="role-card">
+                        <div class="role-icon">🧰</div>
+                        <h3 data-i18n="r1_title">Technicians & General Helpers</h3>
+                        <p data-i18n="r1_desc">Rigorously evaluated technical assistants, workshop helpers, and industrial support personnel.</p>
+                        <span class="role-tag" data-i18n="r1_tag">Tested in Mumbai</span>
+                    </div>
+
+                    <!-- Role 2 -->
+                    <div class="role-card">
+                        <div class="role-icon">✂️</div>
+                        <h3 data-i18n="r2_title">Professional Barbers & Stylists</h3>
+                        <p data-i18n="r2_desc">Expert groomers and salon professionals equipped for high-end Saudi barbershops and luxury salons.</p>
+                        <span class="role-tag" data-i18n="r2_tag">Skilled Craftsmen</span>
+                    </div>
+
+                    <!-- Role 3 -->
+                    <div class="role-card">
+                        <div class="role-icon">🚗</div>
+                        <h3 data-i18n="r3_title">Personal & Heavy Drivers</h3>
+                        <p data-i18n="r3_desc">Licensed, background-verified personal chauffeurs, VIP drivers, and heavy vehicle operators.</p>
+                        <span class="role-tag" data-i18n="r3_tag">GCC License Ready</span>
+                    </div>
+
+                    <!-- Role 4 -->
+                    <div class="role-card">
+                        <div class="role-icon">⚡</div>
+                        <h3 data-i18n="r4_title">Certified Electricians</h3>
+                        <p data-i18n="r4_desc">Building & industrial electricians proficient in HVAC wiring, power distribution, and maintenance.</p>
+                        <span class="role-tag" data-i18n="r4_tag">Certified Technicians</span>
+                    </div>
+
+                    <!-- Role 5 -->
+                    <div class="role-card">
+                        <div class="role-icon">🧵</div>
+                        <h3 data-i18n="r5_title">Master Tailors & Apparel Designers</h3>
+                        <p data-i18n="r5_desc">Master gents and ladies tailors specializing in custom embroidery, thobe tailoring, and garment manufacturing.</p>
+                        <span class="role-tag" data-i18n="r5_tag">Master Craftsmen</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Meher Enterprises -->
+        <section id="why-meher" class="section why-section">
+            <div class="container">
+                <div class="section-head text-center">
+                    <span class="section-tag" data-i18n="why_tag">THE MEHER ENTERPRISES ADVANTAGE</span>
+                    <h2 data-i18n="why_title">Why Saudi Companies Trust Meher Enterprises (Mumbai)</h2>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <h3 data-i18n="w1_title">Mumbai Trade Testing Centers</h3>
+                        <p data-i18n="w1_desc">Every driver, barber, electrician, and tailor is tested hands-on in our Mumbai trade facility before deployment.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3 data-i18n="w2_title">GAMCA Medical & Visa Endorsement</h3>
+                        <p data-i18n="w2_desc">100% compliance with GAMCA medical checkups, Saudi Embassy visa stamping, and biometric clearance in Mumbai.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                        </div>
+                        <h3 data-i18n="w3_title">Rapid 14-Day Deployment</h3>
+                        <p data-i18n="w3_desc">Fast-track recruitment workflow to deliver qualified workers to Riyadh, Jeddah, Dammam, and across KSA in record time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recruitment Process Section -->
+        <section id="process" class="section process-section">
+            <div class="container">
+                <div class="capacity-box-wrapper">
+                    <div class="capacity-info">
+                        <span class="section-tag" data-i18n="proc_tag">HOW WE WORK</span>
+                        <h2 data-i18n="proc_title">Seamless Recruitment Workflow for KSA Employers</h2>
+                        <p data-i18n="proc_desc">From job demand submission in KSA to candidate arrival, Meher Enterprises handles every legal, medical, and flight procedure in Mumbai.</p>
+
+                        <div class="quota-stats">
+                            <div class="q-item">
+                                <span class="q-num">1</span>
+                                <span class="q-label" data-i18n="step1">Demand Letter & Musaned</span>
+                            </div>
+                            <div class="q-item">
+                                <span class="q-num">2</span>
+                                <span class="q-label" data-i18n="step2">Mumbai Trade Interview</span>
+                            </div>
+                            <div class="q-item">
+                                <span class="q-num">3</span>
+                                <span class="q-label" data-i18n="step3">GAMCA & Visa Stamping</span>
+                            </div>
+                            <div class="q-item">
+                                <span class="q-num">4</span>
+                                <span class="q-label" data-i18n="step4">Flight to KSA</span>
+                            </div>
+                        </div>
+
+                        <!-- Glass Bubble Button -->
+                        <button class="btn-glass-bubble btn-large" id="btn-proc-info">
+                            <span class="bubble-layer"></span>
+                            <span class="bubble-layer-2"></span>
+                            <span class="btn-text" data-i18n="get_more_info">Get More Info</span>
+                            <svg class="btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+
+                    <div class="capacity-graphic-card">
+                        <div class="ring-container">
+                            <svg class="ring-svg" viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" class="ring-bg"></circle>
+                                <circle cx="60" cy="60" r="50" class="ring-progress" style="stroke-dashoffset: 25;"></circle>
+                            </svg>
+                            <div class="ring-content">
+                                <span class="ring-val">100%</span>
+                                <span class="ring-cap" data-i18n="guarantee">Guaranteed</span>
+                            </div>
+                        </div>
+                        <p class="ring-note" data-i18n="proc_note">3-Month Replacement Guarantee for all placed workers under KSA labor laws.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="brand-logo">
+                    <img src="logo.jpeg" alt="Meher Enterprises Official Logo" class="official-logo-img">
+                    <div class="brand-text">
+                        <span class="brand-name" data-i18n="brand_name">Meher Enterprises</span>
+                        <span class="brand-tagline" data-i18n="brand_sub">Mumbai, India — Indian Manpower Company</span>
+                    </div>
+                </div>
+                <p data-i18n="footer_sub">Government Licensed Manpower Agency | Head Office: Mumbai, India.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero" data-i18n="nav_overview">Overview</a>
+                <a href="#roles" data-i18n="nav_roles">Categories</a>
+                <a href="#why-meher" data-i18n="nav_why">Why Us</a>
+                <a href="#process" data-i18n="nav_process">Process</a>
+            </div>
+            
+            <!-- Direct WhatsApp Link in Footer -->
+            <div class="footer-whatsapp-wrap">
+                <a href="https://wa.me/918055873233?text=Hello%20Meher%20Enterprises%2C%20I%20want%20to%20inquire%20about%20recruiting%20Indian%20manpower%20for%20Saudi%20Arabia" target="_blank" rel="noopener noreferrer" class="footer-wa-link">
+                    <svg class="wa-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.8-.23-.09-.39-.12-.56.12-.17.25-.66.8-.81.97-.15.17-.3.19-.55.07-.25-.12-1.05-.39-2.01-1.24-.74-.66-1.24-1.47-1.39-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31s-.87.85-.87 2.07c0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg>
+                    <span>WhatsApp Us: +91 8055873233</span>
+                </a>
+            </div>
+
+            <div class="footer-copy" data-i18n="footer_copy">
+                &copy; 2026 Meher Enterprises (Mumbai, India). All Rights Reserved. Serving Saudi Arabian Employers & Enterprises.
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
