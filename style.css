@@ -1051,22 +1051,28 @@ body.lang-ar .extra-trust-bar {
         text-align: center;
     }
 
-    /* Center CTA button on mobile */
+    /* Center CTA button on mobile: 100% width up to 500px */
     .hero-center-cta {
         position: relative;
         bottom: auto;
         left: auto;
         transform: none;
-        width: 90%;
-        max-width: 340px;
+        width: 100% !important;
+        max-width: 500px !important;
+        padding: 0 20px;
+        box-sizing: border-box;
         margin: 0 auto;
         z-index: 15;
     }
 
-    .btn-glass-bubble.btn-large {
-        width: 100%;
-        padding: 14px 20px;
-        font-size: 0.98rem;
+    .hero-center-cta .btn-glass-bubble.btn-large {
+        width: 100% !important;
+        max-width: 500px !important;
+        padding: 16px 20px;
+        font-size: 1.02rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
     }
 }
 
