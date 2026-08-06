@@ -897,27 +897,43 @@ body.lang-ar .extra-trust-bar {
 }
 
 @media (max-width: 768px) {
-    /* Navbar adjustments */
+    /* Navbar Mobile Refinement */
     .nav-container {
-        padding: 10px 16px;
+        padding: 10px 14px;
+    }
+
+    .brand-logo {
+        gap: 8px;
     }
 
     .official-logo-img {
-        height: 36px;
+        height: 34px;
     }
 
     .brand-name {
-        font-size: 1rem;
+        font-size: 0.92rem;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
     }
 
     .brand-tagline {
-        font-size: 0.62rem;
-        display: none;
+        display: none !important;
+    }
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+    .nav-actions .btn-glass-bubble {
+        display: none !important; /* Hide redundant secondary header button on phone */
     }
 
     .btn-lang-toggle {
         padding: 6px 12px;
-        font-size: 0.8rem;
+        font-size: 0.78rem;
+        font-weight: 700;
+        border-radius: 20px;
+        white-space: nowrap;
     }
 
     /* Hero Section Mobile Restructure (Prevent Text Overlap) */
