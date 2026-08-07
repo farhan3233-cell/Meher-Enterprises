@@ -2,10 +2,16 @@
   "version": 2,
   "name": "meher-enterprises-website",
   "cleanUrls": true,
-  "routes": [
+  "redirects": [
     {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/whatsapp",
+      "destination": "https://wa.me/918055873233?text=Hello%20Meher%20Enterprises%2C%20I%20want%20to%20request%20an%20Indian%20Driver%20for%20Saudi%20Arabia",
+      "permanent": false
+    },
+    {
+      "source": "/chat",
+      "destination": "https://wa.me/918055873233?text=Hello%20Meher%20Enterprises%2C%20I%20want%20to%20request%20an%20Indian%20Driver%20for%20Saudi%20Arabia",
+      "permanent": false
     }
   ]
 }
